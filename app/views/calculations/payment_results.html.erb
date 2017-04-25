@@ -1,0 +1,19 @@
+<h1>Payment Results</h1>
+
+<h2>APR</h2>
+<p> <%= number_to_percentage(@apr, precision:4) %>
+</p>
+
+<h2>Number of Years</h2>
+<p> <%= @number_of_years %>
+</p>
+
+<h2>Principal</h2>
+<p> <%= number_to_currency(@present_value) %>
+</p>
+
+<h2>Payment</h2>
+<p> <%= number_to_currency(@payment) %>
+</p>
+
+<a href="/random/new">Pick another random number</a>
