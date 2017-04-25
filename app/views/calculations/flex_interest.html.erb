@@ -1,0 +1,7 @@
+<h1>Flexible Interest</h1>
+
+<p>
+A <%= @number_of_years %> year loan of <%= number_to_currency(@present_value) %>, with an annual
+interest rate of <%= number_to_percentage(@interest_rate, precision: 2) %>, requires a monthly payment of <%= number_to_currency(@payment) %>.
+
+</p>
